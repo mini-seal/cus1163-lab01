@@ -13,7 +13,7 @@ int create_and_write_file(const char *filename, const char *content) {
     
     // TODO: Print a message showing which file is being created.
     // TODO: Print a message showing what content will be written.
-    printf("Creating file %s\n", filename);
+    printf("Creating file: %s\n", filename);
     printf("Content: %s\n", content);
     
     // TODO: Open or create the file for writing using the open() system call.
@@ -77,7 +77,7 @@ int read_file_contents(const char *filename) {
     // TODO: Print the file descriptor value.
     // TODO: Print a header for the file contents.
     printf("File descriptor: %d\n", fd);
-    printf("File Contents.\n");
+    printf("\n--- Contents of 'myfile.txt' ---\n");
     
     // TODO: Read the file contents using the read() system call in a loop.
     // TODO: Use sizeof(buffer) - 1 for the buffer size.
@@ -98,7 +98,7 @@ int read_file_contents(const char *filename) {
     }
     
     // TODO: Print a footer for the end of the file.
-    printf("End of File.\n");
+    printf("--- End of file ---\n");
     
     // TODO: Close the file using close(fd).
     // TODO: Check if close() failed. If so, print an error using perror and return -1.
