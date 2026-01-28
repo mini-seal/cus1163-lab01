@@ -87,7 +87,7 @@ int read_file_contents(const char *filename) {
    
     while((bytes_read = read(fd, buffer, sizeof(buffer)-1)) >0){
         buffer[bytes_read] = '\0';
-        printf("%s",buffer);
+        printf("%s\n",buffer);
     }
 
     // TODO: Check if read() failed (bytes_read == -1). If so, print an error using perror, close the file, and return -1.
