@@ -31,7 +31,7 @@ int create_and_write_file(const char *filename, const char *content) {
     // TODO: Write the content to the file using the write() system call.
     // TODO: Use the length of 'content' as the size to write.
     // TODO: Check if write() failed (bytes_written == -1). If so, print an error using perror, close the file, and return -1.
-    bytes_written = write(fd, content, strlen(content))
+    bytes_written = write(fd, content, strlen(content));
     if(bytes_written = -1){
         perror("write failed");
         return -1;
@@ -42,14 +42,14 @@ int create_and_write_file(const char *filename, const char *content) {
     
     // TODO: Close the file using close(fd).
     // TODO: Check if close() failed. If so, print an error using perror and return -1.
-    close(fd)
+    close(fd);
     if(close(fd) == -1){
         perror("close failed");
         return -1;
     }
     
     // TODO: Print a message that the file was closed successfully.
-    printf("File closed successfully.\n"0;
+    printf("File closed successfully.\n");
         
     return 0;
 }
