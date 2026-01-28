@@ -68,7 +68,7 @@ int read_file_contents(const char *filename) {
     // TODO: Open the file for reading using the open() system call.
     // TODO: Use the O_RDONLY flag.
     // TODO: Check if open() failed (fd == -1). If so, print an error using perror and return -1.
-    fd = open(filenmae, O_RDONLY);
+    fd = open(filename, O_RDONLY);
     if(fd == -1){
         perror("open failed");
         return -1;
