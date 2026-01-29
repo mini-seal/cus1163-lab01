@@ -108,7 +108,7 @@ int read_file_contents(const char *filename) {
     }
     
     // TODO: Print a message that the file was closed successfully.
-    printf("File close successfully.\n");
+    printf("File closed successfully.\n");
     
     return 0;
 }
