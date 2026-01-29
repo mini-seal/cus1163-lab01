@@ -77,7 +77,7 @@ int read_file_contents(const char *filename) {
     // TODO: Print the file descriptor value.
     // TODO: Print a header for the file contents.
     printf("File descriptor: %d\n", fd);
-    printf("\n--- Contents of 'myfile.txt' ---\n");
+    printf("\n--- Contents of '%s' ---\n", filename);
     
     // TODO: Read the file contents using the read() system call in a loop.
     // TODO: Use sizeof(buffer) - 1 for the buffer size.
